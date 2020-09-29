@@ -52,7 +52,7 @@ head(activity2,10)
 steps_per_day2 <- activity2[,.(steps_day=sum(steps)),by =date]
 ggplot(data = steps_per_day2, aes(x=steps_day)) +
       geom_histogram(boundary=0, binwidth = 2500, fill="blue4",col="black") +
-      labs(title = "Total number of steps taken per day", x = "Total steps taken per day") 
+      labs(title = "Total number of steps taken per interval", x = "Total steps taken per interval") 
 mean_steps_per_day2 <- steps_per_day2[,mean(steps_day)]
 print(mean_steps_per_day2)
 median_steps_per_day2 <- steps_per_day2[,median(steps_day)]

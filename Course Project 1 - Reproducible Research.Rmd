@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research - Course Project 1"
+title: "Reproducible Research - course project 1"
 author: "Ben Kahila"
 date: "9/17/2020"
 output: html_document
@@ -71,9 +71,6 @@ ggplot(data = steps_by, aes(x=interval,y =average_steps, color = daytype)) +
    geom_line() + facet_grid(daytype~.) + scale_colour_manual(values =c("goldenrod4","darkviolet"))+
       ggtitle("Average steps per time interval: weekdays vs. weekends")+
          xlab("interval") + ylab("average steps") 
-
-ggplot(StepsPerTimeDT, aes(time, steps))
-j+geom_line(col="greendarkred")+ggtitle("Average steps per time interval: weekdays vs. weekends")+xlab("Time")+ylab("Steps")+theme(plot.title = element_text(face="bold", size=12))+facet_grid(DayType ~ .)
 
 ```
 
